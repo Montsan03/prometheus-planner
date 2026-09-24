@@ -1,91 +1,77 @@
 # Prometheus Planner — Privacy Policy
 
-_Effective date: August 5, 2026 · Contact: lperal03@mac.com_
+_Effective date: September 23, 2026 · Contact: lperal03@mac.com_
 
-**The short version.** Your planner lives on your device and in your own private iCloud. We run no analytics, show no ads, and use no trackers. Two optional features send specific data out only after you turn them on, and this policy names exactly what they send.
+**The short version.** Your planner lives on your device and, if you use iCloud, in your own private iCloud. The app has no accounts, no ads, no analytics and no trackers, and it sends nothing to us.
 
 ### 1. What stays on your device
-- Your pages, tasks, appointments, notes, Apple Pencil ink, expenses, roles, goals and backups are stored locally on your device.
-- Handwriting recognition (turning ink into text/tasks) runs entirely on-device using Apple's Vision framework. Your handwriting is never uploaded.
-- Notifications (appointment alarms, the daily task digest, the evening day-close reminder) are local; we operate no push servers.
-- `.goblin` backup files are created only when you export them (or when auto-backup is enabled) and stay where you put them. They are **not encrypted** — keep them private.
+- Your pages, tasks, appointments, notes, Apple Pencil ink, expenses, roles, goals and backups are stored on your device.
+- Handwriting recognition (turning ink into text or tasks) runs entirely on your device with Apple's Vision framework. Your handwriting is never uploaded.
+- Notifications (appointment alerts, the daily task summary, task reminders and the evening day-close reminder) are scheduled locally on your device. We run no push servers. The "Complete" and "Snooze" buttons on a notification act only on your device.
 
 ### 2. iCloud (Apple)
-If iCloud is enabled, your planner data syncs through your **private iCloud database**, encrypted and controlled by your Apple Account. We, the developer, have no access to it. Apple's own privacy policy governs iCloud.
+If iCloud is on for the app, your planner data syncs between your iPad and Mac through your **private iCloud database**, which is protected and controlled by your Apple Account. We, the developer, cannot access it. Apple's privacy policy governs iCloud.
 
 ### 3. Calendar and Reminders
-With your permission, the app reads and writes events and reminders using Apple's EventKit **on your device** to keep the planner in sync with the system apps. This data is not transmitted to us or to any third party by the sync itself.
+With your permission, the app reads and writes events and reminders through Apple's EventKit **on your device**, so the planner stays in sync with Apple's Calendar and Reminders apps. This sync sends nothing to us or to any third party. Both permissions are optional; the planner works fully without them.
 
-### 4. Optional: Oráculo team connection
-If (and only if) you sign in to an Oráculo company workspace:
-- Your **email address and password** are sent to our server (`api.oraculo.prometheusih.com`) over HTTPS to authenticate; we store a session token in your device's Keychain.
-- Action items assigned to you are downloaded into your planner.
-- If you additionally enable the **"Share productivity"** switch (off by default), the app sends: aggregated productivity metrics (tasks completed/remaining today, velocity, energy level, streak, counts of pending A/B and overdue tasks) and the **titles and times of appointments that look like meetings** (matched by keywords such as "meeting", "junta", "call"). Task titles are never sent through this channel.
-- Turning the switch off stops these transmissions. Disconnecting the account removes the session from your device.
+### 4. Backups
+- **Manual backups** (`.goblin` files) are created only when you export one, and they go wherever you choose to save or share them.
+- **Automatic backups**: once a week the app saves a backup in its private storage on your device. The last four are kept, they are excluded from iCloud device backups, and you can restore them from Settings → Backup.
+- Backup files are **not encrypted**. Anyone who has the file can read your planner, so keep exported files somewhere safe.
 
-### 5. Optional: Pythia AI assistant (bring your own key)
-Pythia only works if you paste your **own Anthropic API key** (stored in your device's Keychain, never on our servers). When you ask Pythia a question, the app sends to **Anthropic** (api.anthropic.com), under your key and Anthropic's terms: your question and a daily context that can include **task titles, appointment titles and times, overdue-task titles, productivity metrics, and expense amounts by category**. If your question concerns your company workspace and you are signed in to Oráculo, the question text may also be sent to our server to retrieve company context. Don't use Pythia if you don't want this data to leave the device.
-
-### 6. What we do NOT do
-- No advertising, no ad identifiers (IDFA), no tracking across apps or websites.
+### 5. What we do NOT do
+- No advertising and no advertising identifier (IDFA); no tracking across apps or websites.
 - No third-party analytics or crash-reporting SDKs.
-- No sale or sharing of personal data with data brokers.
-- No accounts required for the core app.
+- No sale or sharing of personal data.
+- No account or sign-in of any kind.
+- No connection to any server operated by us.
 
-### 7. Data retention and deletion
-- On-device and iCloud data: delete it by deleting content in the app, or removing the app and its iCloud data (iOS Settings → Apple Account → iCloud).
-- Oráculo server data (account, metrics, meeting titles): request deletion at the contact email; we delete within 30 days.
-- Anthropic receives Pythia requests under your own key; their retention is governed by Anthropic's policies for your account.
+### 6. Data retention and deletion
+Your data is yours and stays under your control. Delete content in the app, or remove the app and its iCloud data (iOS/iPadOS: Settings → [your name] → iCloud → Manage Account Storage; macOS: System Settings → [your name] → iCloud). Exported backup files are deleted like any other file.
 
-### 8. Children
-The app is a general-audience productivity tool and does not knowingly collect data from children.
+### 7. Children
+Prometheus Planner is a general-audience productivity app and does not knowingly collect data from children.
 
-### 9. Changes
-We will update this page and the effective date when the policy changes. Material changes will be noted in the app's release notes.
+### 8. Changes
+If this policy changes, we will update this page and its effective date and mention material changes in the app's release notes.
 
 ---
 
 # Prometheus Planner — Política de Privacidad
 
-_Fecha de entrada en vigor: 5 de agosto de 2026 · Contacto: lperal03@mac.com_
+_Fecha de entrada en vigor: 23 de septiembre de 2026 · Contacto: lperal03@mac.com_
 
-**La versión corta.** Tu planner vive en tu dispositivo y en tu propio iCloud privado. No usamos analytics, no mostramos anuncios y no usamos rastreadores. Dos funciones opcionales envían datos específicos solo después de que tú las actives, y esta política nombra exactamente qué envían.
+**La versión corta.** Tu planner vive en tu dispositivo y, si usas iCloud, en tu propio iCloud privado. La app no tiene cuentas, anuncios, analítica ni rastreadores, y no nos envía nada.
 
 ### 1. Lo que se queda en tu dispositivo
-- Tus páginas, tareas, citas, notas, tinta de Apple Pencil, gastos, roles, metas y respaldos se guardan localmente en tu dispositivo.
-- El reconocimiento de escritura (convertir tinta en texto/tareas) ocurre por completo en el dispositivo usando el framework Vision de Apple. Tu escritura nunca se sube.
-- Las notificaciones (alarmas de citas, resumen diario de tareas, recordatorio del cierre del día) son locales; no operamos servidores de push.
-- Los archivos de respaldo `.goblin` se crean solo cuando los exportas (o activas el respaldo automático) y permanecen donde tú los guardes. **No están cifrados** — mantenlos privados.
+- Tus páginas, tareas, citas, notas, tinta de Apple Pencil, gastos, roles, metas y respaldos se guardan en tu dispositivo.
+- El reconocimiento de escritura (convertir tinta en texto o tareas) ocurre por completo en tu dispositivo con el framework Vision de Apple. Tu escritura nunca se sube.
+- Las notificaciones (avisos de citas, resumen diario de tareas, recordatorios de tareas y el recordatorio del cierre del día) se programan localmente en tu dispositivo. No operamos servidores de push. Los botones «Completar» y «Posponer» de una notificación actúan solo en tu dispositivo.
 
 ### 2. iCloud (Apple)
-Si iCloud está activo, tus datos se sincronizan a través de tu **base de datos privada de iCloud**, cifrada y controlada por tu Cuenta Apple. Nosotros, como desarrollador, no tenemos acceso a ella. iCloud se rige por la política de privacidad de Apple.
+Si iCloud está activo para la app, tus datos se sincronizan entre tu iPad y tu Mac a través de tu **base de datos privada de iCloud**, protegida y controlada por tu Cuenta de Apple. Nosotros, como desarrollador, no podemos acceder a ella. iCloud se rige por la política de privacidad de Apple.
 
 ### 3. Calendario y Recordatorios
-Con tu permiso, la app lee y escribe eventos y recordatorios mediante EventKit de Apple **en tu dispositivo**, para mantener el planner sincronizado con las apps del sistema. Esta sincronización no nos transmite datos a nosotros ni a terceros.
+Con tu permiso, la app lee y escribe eventos y recordatorios mediante EventKit de Apple **en tu dispositivo**, para mantener el planner sincronizado con las apps Calendario y Recordatorios. Esta sincronización no nos envía nada a nosotros ni a terceros. Ambos permisos son opcionales; el planner funciona completo sin ellos.
 
-### 4. Opcional: conexión de equipo Oráculo
-Si (y solo si) inicias sesión en un espacio de empresa Oráculo:
-- Tu **correo y contraseña** se envían a nuestro servidor (`api.oraculo.prometheusih.com`) por HTTPS para autenticarte; guardamos un token de sesión en el Keychain de tu dispositivo.
-- Los action items asignados a ti se descargan a tu planner.
-- Si además activas el interruptor **"Compartir productividad"** (apagado por defecto), la app envía: métricas agregadas de productividad (tareas completadas/restantes hoy, velocity, nivel de energía, racha, conteos de tareas A/B pendientes y atrasadas) y los **títulos y horarios de las citas que parecen juntas** (detectadas por palabras como "junta", "meeting", "llamada"). Los títulos de tus tareas nunca se envían por este canal.
-- Apagar el interruptor detiene estos envíos. Desconectar la cuenta elimina la sesión de tu dispositivo.
+### 4. Respaldos
+- **Respaldos manuales** (archivos `.goblin`): se crean solo cuando exportas uno y van a donde tú decidas guardarlos o compartirlos.
+- **Respaldos automáticos**: una vez por semana la app guarda un respaldo en su almacenamiento privado en tu dispositivo. Se conservan los últimos cuatro, no se incluyen en las copias de seguridad de iCloud del dispositivo y puedes restaurarlos desde Ajustes → Backup.
+- Los respaldos **no están cifrados**: quien tenga el archivo puede leer tu planner. Guarda los archivos exportados en un lugar seguro.
 
-### 5. Opcional: asistente de IA Pythia (con tu propia clave)
-Pythia solo funciona si pegas tu **propia API key de Anthropic** (se guarda en el Keychain de tu dispositivo, nunca en nuestros servidores). Cuando le preguntas algo a Pythia, la app envía a **Anthropic** (api.anthropic.com), con tu clave y bajo los términos de Anthropic: tu pregunta y un contexto del día que puede incluir **títulos de tareas, títulos y horarios de citas, títulos de tareas atrasadas, métricas de productividad y montos de gastos por categoría**. Si tu pregunta trata de tu empresa y tienes sesión de Oráculo, el texto de la pregunta puede enviarse también a nuestro servidor para recuperar contexto de la empresa. No uses Pythia si no quieres que estos datos salgan del dispositivo.
+### 5. Lo que NO hacemos
+- Sin publicidad ni identificador publicitario (IDFA); sin rastreo entre apps o sitios web.
+- Sin SDKs de analítica ni de reporte de fallos de terceros.
+- Sin venta ni intercambio de datos personales.
+- Sin cuentas ni inicio de sesión de ningún tipo.
+- Sin conexión a ningún servidor operado por nosotros.
 
-### 6. Lo que NO hacemos
-- Sin publicidad, sin identificadores publicitarios (IDFA), sin rastreo entre apps o sitios.
-- Sin SDKs de analytics ni de reporte de crashes de terceros.
-- Sin venta ni intercambio de datos personales con data brokers.
-- Sin cuentas obligatorias para usar la app.
+### 6. Conservación y eliminación de datos
+Tus datos son tuyos y quedan bajo tu control. Bórralos desde la app, o elimina la app y sus datos de iCloud (iOS/iPadOS: Ajustes → [tu nombre] → iCloud → Administrar almacenamiento; macOS: Ajustes del Sistema → [tu nombre] → iCloud). Los respaldos exportados se borran como cualquier otro archivo.
 
-### 7. Conservación y eliminación de datos
-- Datos en el dispositivo e iCloud: elimínalos borrando contenido en la app, o quitando la app y sus datos de iCloud (Ajustes de iOS → Cuenta Apple → iCloud).
-- Datos en el servidor de Oráculo (cuenta, métricas, títulos de juntas): solicita su eliminación al correo de contacto; eliminamos en un máximo de 30 días.
-- Anthropic recibe las solicitudes de Pythia con tu propia clave; su conservación se rige por las políticas de Anthropic para tu cuenta.
+### 7. Menores
+Prometheus Planner es una app de productividad para público general y no recopila datos de menores a sabiendas.
 
-### 8. Menores
-La app es una herramienta de productividad para público general y no recopila datos de menores a sabiendas.
-
-### 9. Cambios
-Actualizaremos esta página y la fecha de vigencia cuando la política cambie. Los cambios relevantes se anunciarán en las notas de versión de la app.
+### 8. Cambios
+Si esta política cambia, actualizaremos esta página y su fecha de vigencia, y mencionaremos los cambios relevantes en las notas de versión de la app.
